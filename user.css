@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* .header{
+    border: 1px solid green;
+    padding: 40px;
+} */
+
+.navbar{
+    /* border: 1px solid blue; */
+    height: 99.6vh;
+    max-height: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    background-color: rgb(221, 221, 221);
+    z-index: 1;
+    max-width: 500px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    padding: 20px 0px 20px 0;
+    gap: 20px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end;
+    /* border: 1px solid green; */
+    padding-top: 15px;
+    width: 100%;
+}
+
+.btn-container{
+    width: 100%;
+    padding: 15px 0 20px 0;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.btn-container button{
+    background: blue;
+    border: 1px solid blue;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+nav .nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav .nav-btn.active{
+    background-color: brown;
+}
+
+nav p{
+    padding-top: 11px;
+}
+
+hr{
+    margin-bottom: 10px;
+    /* border: 1px solid grey; */
+    width: 90%;
+}
+
+/* Main contents  */
+.main{
+    /* border: 1px solid yellow; */
+    padding: 20px;
+    max-width: 76vw;
+    max-height: 100%;
+    overflow-x: hidden;
+    /* margin-top: 10px; */
+}
+
+.main .box{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 5px 5px 0;
+}
+
+.main img{
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .3);
+}
+
+.main h1{
+    font-weight: bold;
+    
+}
+
+.main .objectives{
+    display: block;
+    padding: 20px 39px;
+    height: 75vh;
+}
+
+.objectives h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+.objectives ul li{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.vision{
+    justify-content: space-between;
+}
+
+.box-right,.box-left{
+    transition: transform 0.5s ease;
+}
+
+.box-right{
+    transform: translateX(120%);
+}
+
+.box-left{
+    transform: translateX(-120%);
+}
+
+.box-left.show, .box-right.show {
+    transform: translateX(0%);
+}
+/* .box-left:nth-last-of-type(), .box-right:nth-last-of-type(){
+    transform: translateX(110%);
+} */
+
